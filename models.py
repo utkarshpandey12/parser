@@ -117,7 +117,7 @@ class BookingRequest:
         if self.language_code not in VALID_LANGUAGES:
             self.language_code = DEFAULT_LANGUAGE
 
-        # Validate options quota
+        # Validate options quota __define_ocg__
         if self.options_quota > MAX_OPTIONS_QUOTA:
             raise InvalidParametersError(
                 f"Options quota cannot exceed {MAX_OPTIONS_QUOTA}"

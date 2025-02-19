@@ -23,6 +23,6 @@ sample_xml = """
     </Paxes>
 </AvailRQ>
 """
-
+var_ocg = "some random thing"
 response = process_booking_request(sample_xml)
 print(response)
